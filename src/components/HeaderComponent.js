@@ -38,7 +38,6 @@ function Header() {
                 <Toolbar>
                     <Typography variant="h6" className={classes.title} align="center">
                         <Button component={Link} to='/home' className={classes.button}
-                            variant="outlined"
                             size="small"
                             color="inherit"
                             startIcon={<HomeOutlinedIcon />}
@@ -49,7 +48,6 @@ function Header() {
 
                     <Typography variant="h6" className={classes.title} align="center">
                         <Button component={Link} to='/projects' className={classes.button}
-                            variant="outlined"
                             size="small"
                             color="inherit"
                             startIcon={<WorkOutlineOutlinedIcon />}
@@ -59,7 +57,6 @@ function Header() {
                     </Typography>
                     <Typography variant="h6" className={classes.title} align="center">
                         <Button component={Link} to='/contact' className={classes.button}
-                            variant="outlined"
                             size="small"
                             color="inherit"
                             startIcon={<ContactMailOutlinedIcon />}

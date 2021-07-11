@@ -9,7 +9,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
-import VisibilityOffTwoToneIcon from '@material-ui/icons/VisibilityOffTwoTone';
+import RemoveRedEyeOutlinedIcon from '@material-ui/icons/RemoveRedEyeOutlined';
+import Fade from 'react-reveal/Fade';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -53,27 +54,29 @@ function RenderProject() {
             <Grid container align='center' justify='center' spacing={3}>
                 {PROJECTS.map((project) => (
                     <Grid item key={project.id} xs={12} sm={4}>
-                        <Card className={classes.card} elevation={15}>
-                            <CardContent>
-                                <Typography variant='h6' className={classes.body1}>{project.name}</Typography>
-                            </CardContent>
-                            <CardMedia
-                                className={classes.media}
-                                image={project.image}
-                                title={project.name}
-                            />
-                            <CardContent>
-                                <Typography variant='body1' color='textPrimary' className={classes.body1}>
-                                    {project.description}
-                                </Typography>
-                            </CardContent>
-                            <Button onClick={() => window.open(project.url)}
-                            className={classes.button}
-                            endIcon={<VisibilityOffTwoToneIcon />}
-                            >
-                            Veiw Me
-                            </Button>
-                        </Card>
+                        <Fade top>
+                            <Card className={classes.card} elevation={15}>
+                                <CardContent>
+                                    <Typography variant='h6' className={classes.body1}>{project.name}</Typography>
+                                </CardContent>
+                                <CardMedia
+                                    className={classes.media}
+                                    image={project.image}
+                                    title={project.name}
+                                />
+                                <CardContent>
+                                    <Typography variant='body1' color='textPrimary' className={classes.body1}>
+                                        {project.description}
+                                    </Typography>
+                                </CardContent>
+                                <Button onClick={() => window.open(project.url)}
+                                    className={classes.button}
+                                    endIcon={<RemoveRedEyeOutlinedIcon />}
+                                >
+                                    Veiw Me
+                                </Button>
+                            </Card>
+                        </Fade>
                     </Grid>
                 ))}
             </Grid>

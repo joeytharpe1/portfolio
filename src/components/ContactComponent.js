@@ -40,7 +40,7 @@ function Contact() {
 
         <Card className={classes.card}>
             <CardContent>
-                <Typography gutterBottom variant="h5" color='textPrimary'>Contact me</Typography>
+                <Typography gutterBottom variant="h5" color='secondary'>Contact me</Typography>
                 <Typography gutterBottom variant="body2" component='p' color='textSecondary'>
                     fill out this form and i will get back to you within 24 hours.
                 </Typography>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import SkillSet from './SkillSet';
 
 import Fade from 'react-reveal/Fade';
 import TextLoop from "react-text-loop";
@@ -37,10 +38,13 @@ const useStyles = makeStyles((theme) => ({
     },
     header: {
         '&:hover': {
-            backgroundColor: '#fff',
+
             color: theme.palette.secondary.main,
             cursor: 'pointer',
         }
+    },
+    span: {
+        color: theme.palette.secondary.main,
     }
 
 
@@ -57,7 +61,7 @@ function Home() {
                     <Fade bottom>
                         <Typography variant='h2' align='center' color='primary' className={classes.header}>
                             I'm Joseph Tharpe, Just a guy trying to <TextLoop>
-                                <span style={{ color: 'blue' }}>Code.</span>
+                                <span style={{ color: 'grey' }}>Code.</span>
                                 <span style={{ color: '#34eba8' }}>Design.</span>
                                 <span style={{ color: 'black' }}>Learn.</span>
                             </TextLoop>
@@ -83,13 +87,17 @@ function Home() {
                                 <Typography variant='body1' color='textPrimary' className={classes.body1}>
                                     I'm a fullstack web developer based in California.
                                     I Graduated from Nucamp coding bootcamp in August 2021.
-                                    I specialize in web design, frontend and backend development to create the perfect user experience. Back in 2018-2019 i was actually a low voltage apprentice, where i would work with hooking up computers to idf rooms. i would strip coax cables, cat5 and cat6 cables and device them to different infrastructures. I realized that i love computers so much, and there has to be something out there much more than what i was doing. I found programming and i love it, you can say i am obsessed with creating projects and trying to debug difficult problems. To get to where I am today has not been easy, but with hard work, commitment and dedication I believe anything is possible.
+                                    I specialize in web design, frontend and backend development to create the perfect user experience. Back in 2018-2019 i was actually a low voltage apprentice, where i would work with hooking up computers to IDF rooms. i would strip coax cables, cat5 and cat6 cables and device them to different infrastructures. I realized that i love computers so much, and there has to be something out there much more than what i was doing. I found programming and i love it, you can say i am obsessed with creating projects and trying to debug difficult problems. To get to where I am today has not been easy, but with hard work, commitment and dedication I believe anything is possible.
+                                </Typography>
+                                <Typography variant="body1" color="textPrimary" className={classes.body1}>
+                                    I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, <span className={classes.span}>HTML</span>, <span className={classes.span}>CSS</span>, <span className={classes.span}>JS</span>, and <span className={classes.span}>ReactJS</span> building small and medium web apps, features, animations, and coding interactive layouts. I also have full-stack developer experience with handling things like database operations, user authentication, and application logic. (<span className={classes.span}>NodeJs</span> and <span className={classes.span}>MongoDB</span>) .
                                 </Typography>
                             </CardContent>
                         </Paper>
                     </Fade>
                 </Grid>
             </Grid>
+            <SkillSet />
         </Container>
     );
 }
