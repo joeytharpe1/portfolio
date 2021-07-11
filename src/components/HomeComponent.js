@@ -1,4 +1,6 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
+
 import SkillSet from './SkillSet';
 
 import Fade from 'react-reveal/Fade';
@@ -27,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         transition: "transform 0.15s ease-in-out",
         "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
-        cursor: 'pointer',
+
     },
 
     body1: {
@@ -45,6 +47,12 @@ const useStyles = makeStyles((theme) => ({
     },
     span: {
         color: theme.palette.secondary.main,
+    },
+    span2: {
+        color: theme.palette.secondary.main,
+        fontStyle: 'italic',
+        textDecoration: 'underline',
+        cursor: 'pointer',
     }
 
 
@@ -53,6 +61,12 @@ const useStyles = makeStyles((theme) => ({
 
 function Home() {
     const classes = useStyles();
+
+    const history = useHistory();
+
+    const handleRoute = () => {
+        history.push("/contact");
+    }
 
     return (
         <Container>
@@ -89,8 +103,12 @@ function Home() {
                                     I Graduated from Nucamp coding bootcamp in August 2021.
                                     I specialize in web design, frontend and backend development to create the perfect user experience. Back in 2018-2019 i was actually a low voltage apprentice, where i would work with hooking up computers to IDF rooms. i would strip coax cables, cat5 and cat6 cables and device them to different infrastructures. I realized that i love computers so much, and there has to be something out there much more than what i was doing. I found programming and i love it, you can say i am obsessed with creating projects and trying to debug difficult problems. To get to where I am today has not been easy, but with hard work, commitment and dedication I believe anything is possible.
                                 </Typography>
-                                <Typography variant="body1" color="textPrimary" className={classes.body1}>
+                                <Typography gutterBottom variant="body1" color="textPrimary" className={classes.body1}>
                                     I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, <span className={classes.span}>HTML</span>, <span className={classes.span}>CSS</span>, <span className={classes.span}>JS</span>, and <span className={classes.span}>ReactJS</span> building small and medium web apps, features, animations, and coding interactive layouts. I also have full-stack developer experience with handling things like database operations, user authentication, and application logic. (<span className={classes.span}>NodeJs</span> and <span className={classes.span}>MongoDB</span>) .
+                                </Typography>
+                                <br />
+                                <Typography variant="body1" color='textPrimary' className={classes.body1}>
+                                    Visit my <span className={classes.span2}>LinkedIn</span> profile for more details or just <span className={classes.span2} onClick={handleRoute}> Contact Me</span>
                                 </Typography>
                             </CardContent>
                         </Paper>

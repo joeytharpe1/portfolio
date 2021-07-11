@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
         "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
     },
     Typography: {
+        fontWeight: 'bold',
         alignItems: 'center',
         transition: "transform 0.15s ease-in-out",
         '&:hover': {
@@ -32,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
     },
     slider: {
         '&:hover': {
-            // backgroundColor: theme.palette.primary.main,
             color: theme.palette.primary.main,
         }
     },
