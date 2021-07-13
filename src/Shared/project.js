@@ -5,7 +5,8 @@ export const PROJECTS = [
         name: "Star Wars App",
         image: "images/starwarsScreen.png",
         description: "Star Wars Info site with a movie API",
-        url: 'http://jtharpe-starwars.netlify.app'
+        url: 'http://jtharpe-starwars.netlify.app',
+        button: 'Feel the Force'
     },
    
     {
@@ -13,21 +14,24 @@ export const PROJECTS = [
         name: "Weather App",
         image: "images/weather.png",
         description: "Dynamic weather app 🌴",
-        url: 'https://jtharpe-weather-app.netlify.app'
+        url: 'https://jtharpe-weather-app.netlify.app',
+        button: 'experience the weather in action'
     },
     {
         id:3,
         name: "Coffee Clone",
         image: "images/coffee.png",
         description: "starbucks coffee clone ☕",
-        url: 'https://jtharpe-coffee-clone.netlify.app'
+        url: 'https://jtharpe-coffee-clone.netlify.app',
+        button: 'hmm craving coffee ?'
     },
     {
         id:4,
         name: "To-do Cooking Recipe",
         image: 'images/toodo.png',
         description: "todo list for storing ingredients 👨‍🍳",
-        url: 'https://jtharpe-toodo-list.netlify.app'
+        url: 'https://jtharpe-toodo-list.netlify.app',
+        button: 'see how it works'
     },
 
     {

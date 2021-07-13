@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
         '&:hover': {
+            fontstyle: 'italic',
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.secondary.main,
             transition: "transform 0.5s ease-in-out",
@@ -73,7 +74,7 @@ function RenderProject() {
                                     className={classes.button}
                                     endIcon={<RemoveRedEyeOutlinedIcon />}
                                 >
-                                   more details
+                                {project.button}
                                 </Button>
                             </Card>
                         </Fade>
