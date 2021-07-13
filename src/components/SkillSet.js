@@ -48,7 +48,7 @@ function SkillSet() {
     const classes = useStyles();
 
     return (
-        <Grid container spacing={3} className={classes.root}>
+        <Grid container spacing={4} className={classes.root}>
             <Grid item xs={12} md={8}>
                 <Paper elevation={15} className={classes.paper}>
                     <CardContent>

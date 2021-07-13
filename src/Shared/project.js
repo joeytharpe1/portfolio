@@ -2,11 +2,12 @@
 export const PROJECTS = [
     {
         id:1,
-        name: "To-do Cooking Recipe",
-        image: 'images/toodo.png',
-        description: "todo list for storing ingredients 👨‍🍳",
-        url: 'https://jtharpe-toodo-list.netlify.app'
+        name: "Star Wars App",
+        image: "images/starwarsScreen.png",
+        description: "Star Wars Info site with a movie API",
+        url: 'http://jtharpe-starwars.netlify.app'
     },
+   
     {
         id:2,
         name: "Weather App",
@@ -23,11 +24,12 @@ export const PROJECTS = [
     },
     {
         id:4,
-        name: "Star Wars App",
-        image: "images/starwarsScreen.png",
-        description: "Star Wars Info site with a movie API",
-        url: 'http://jtharpe-starwars.netlify.app'
+        name: "To-do Cooking Recipe",
+        image: 'images/toodo.png',
+        description: "todo list for storing ingredients 👨‍🍳",
+        url: 'https://jtharpe-toodo-list.netlify.app'
     },
+
     {
         id:5,
         name: "project 4",

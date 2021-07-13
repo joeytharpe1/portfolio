@@ -28,19 +28,19 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#000000',
         alignItems: 'center',
         transition: "transform 0.15s ease-in-out",
-        "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
+        "&:hover": { transform: "scale3d(1.05, 1.05, 1)",
+        backgroundColor: theme.palette.primary.main,
+    },
 
     },
 
     body1: {
         '&:hover': {
             backgroundColor: theme.palette.primary.main,
-            color: theme.palette.secondary.main,
         }
     },
     header: {
         '&:hover': {
-
             color: theme.palette.secondary.main,
             cursor: 'pointer',
         }
@@ -70,14 +70,14 @@ function Home() {
 
     return (
         <Container>
-            <Grid container spacing={2} className={classes.title}>
+            <Grid container spacing={4} className={classes.title} align="center" justify="center">
                 <Grid item xs={12}>
                     <Fade bottom>
                         <Typography variant='h2' align='center' color='primary' className={classes.header}>
-                            I'm Joseph Tharpe, Just a guy trying to <TextLoop>
-                                <span style={{ color: 'grey' }}>Code.</span>
-                                <span style={{ color: '#34eba8' }}>Design.</span>
-                                <span style={{ color: 'black' }}>Learn.</span>
+                            I'm Joseph Tharpe, your software <TextLoop>
+                                <span style={{ color: 'grey' }}>wizard.</span>
+                                <span style={{ color: '#34eba8' }}>magician.</span>
+                                <span style={{ color: 'black' }}>engineer.</span>
                             </TextLoop>
                         </Typography>
                     </Fade>
@@ -99,16 +99,14 @@ function Home() {
                         <Paper elevation={15} className={classes.card}>
                             <CardContent>
                                 <Typography variant='body1' color='textPrimary' className={classes.body1}>
-                                    I'm a fullstack web developer based in California.
-                                    I Graduated from Nucamp coding bootcamp in August 2021.
-                                    I specialize in web design, frontend and backend development to create the perfect user experience. Back in 2018-2019 i was actually a low voltage apprentice, where i would work with hooking up computers to IDF rooms. i would strip coax cables, cat5 and cat6 cables and device them to different infrastructures. I realized that i love computers so much, and there has to be something out there much more than what i was doing. I found programming and i love it, you can say i am obsessed with creating projects and trying to debug difficult problems. To get to where I am today has not been easy, but with hard work, commitment and dedication I believe anything is possible.
+                                    I am a California and remote-capable full stack web developer, specializing in user experience to give customers the best value for their requested project. I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, <span className={classes.span}>HTML</span>, <span className={classes.span}>CSS</span>, <span className={classes.span}>JS</span>, and <span className={classes.span}>ReactJS</span> building small and medium web apps, features, animations, and coding interactive layouts. I also have full-stack developer experience with handling things like database operations, user authentication, and application logic using <span className={classes.span}>NodeJs</span> and <span className={classes.span}>MongoDB</span>.
                                 </Typography>
                                 <Typography gutterBottom variant="body1" color="textPrimary" className={classes.body1}>
-                                    I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, <span className={classes.span}>HTML</span>, <span className={classes.span}>CSS</span>, <span className={classes.span}>JS</span>, and <span className={classes.span}>ReactJS</span> building small and medium web apps, features, animations, and coding interactive layouts. I also have full-stack developer experience with handling things like database operations, user authentication, and application logic. (<span className={classes.span}>NodeJs</span> and <span className={classes.span}>MongoDB</span>) .
+                                    My passion for full stack development is electric, in the truest sense. In a previous life, I was a low voltage junior electrician, where I would work with hooking up computers to IDF rooms, strip coax cables, install cat5 and cat6 cables, etc. I was jolted into the amazing power of computers from my frequent interactions with them. I am obsessed with creating projects and trying to debug difficult problems. I look forward to helping you find the most from your existing or future website. Schedule a call with me, via link:
                                 </Typography>
                                 <br />
                                 <Typography variant="body1" color='textPrimary' className={classes.body1}>
-                                    Visit my <span className={classes.span2}>LinkedIn</span> profile for more details or just <span className={classes.span2} onClick={handleRoute}> Contact Me</span>
+                                    My <span className={classes.span2}>LinkedIn</span> profile for more details or just <span className={classes.span2} onClick={handleRoute}> Contact Me</span>
                                 </Typography>
                             </CardContent>
                         </Paper>

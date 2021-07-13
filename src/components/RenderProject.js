@@ -51,7 +51,7 @@ function RenderProject() {
 
     return (
         <Container className={classes.root} >
-            <Grid container align='center' justify='center' spacing={3}>
+            <Grid container align='center' justify='center' spacing={4}>
                 {PROJECTS.map((project) => (
                     <Grid item key={project.id} xs={12} sm={4}>
                         <Fade top>
@@ -73,7 +73,7 @@ function RenderProject() {
                                     className={classes.button}
                                     endIcon={<RemoveRedEyeOutlinedIcon />}
                                 >
-                                    Veiw Me
+                                   more details
                                 </Button>
                             </Card>
                         </Fade>
