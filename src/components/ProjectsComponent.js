@@ -1,13 +1,11 @@
 import React from 'react';
 import RenderProject from './RenderProject'
-import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Button from '@material-ui/core/Button';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -19,6 +17,14 @@ const useStyles = makeStyles((theme) => ({
             "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
         }
     },
+    header: {
+        marginTop: 20,
+        '&:hover': {
+            transform: "scale3d(1.05, 1.05, 1)",
+            color: theme.palette.secondary.main,
+            cursor: 'pointer',
+        }
+    },
 }));
 
 function Projects() {
@@ -26,17 +32,11 @@ function Projects() {
 
     return (
         <Container>
-            <Grid container spacing={2}>
+            <Grid container>
                 <Grid item xs={12}>
-                    <Breadcrumbs aria-label="breadcrumb">
-                        <Button component={Link} to="/" color='primary' className={classes.button}>
-                            Home
-                        </Button>
-                        <Button component={Link} to="/Projects" color="primary" className={classes.button} >
-                            Projects
-                        </Button>
-                        <Typography color="secondary">Breadcrumb</Typography>
-                    </Breadcrumbs>
+                    <Typography variant='h4' align='center' justify='center' className={classes.header}>
+                        Projects
+                    </Typography>
                 </Grid>
             </Grid>
             <RenderProject />

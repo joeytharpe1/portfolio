@@ -5,6 +5,7 @@ import Contact from './ContactComponent';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import Projects from './ProjectsComponent';
+import Footer from './FooterComponent';
 
 import StarfieldAnimation from 'react-starfield-animation';
 
@@ -52,10 +53,11 @@ function Main() {
                     <Header />
                     <Switch>
                         <Route path='/home' component={Home} />
-                        <Route exact path='/projects' component={Projects}/>
-                        <Route exact path='/contact' component={Contact} />
+                        <Route exact path='/home#projects' component={Projects}/>
+                        <Route exact path='/home#contact' component={Contact} />
                         <Redirect to='/home' />
                     </Switch>
+                    <Footer />
                 </ThemeProvider>
             </CssBaseline>
         </>

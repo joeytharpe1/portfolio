@@ -1,30 +1,36 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+
+import Link from '@material-ui/core/Link';
 
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import ContactMailOutlinedIcon from '@material-ui/icons/ContactMailOutlined';
-import WorkOutlineOutlinedIcon from '@material-ui/icons/WorkOutlineOutlined';
+
 
 
 const useStyles = makeStyles((theme) => ({
+    appbar: {
+        marginBottom: 15,
+    },
     root: {
         flexGrow: 1,
         display: 'flex',
     },
     title: {
         flexGrow: 1,
+
     },
     button: {
+        color: '#fff',
         '&:hover': {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.secondary.main,
             transition: "transform 0.15s ease-in-out",
-            "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
+            "&:hover": {
+                transform: "scale3d(1.05, 1.05, 1)",
+                textDecoration: 'none',
+            },
         }
     }
 }));
@@ -32,38 +38,53 @@ const useStyles = makeStyles((theme) => ({
 function Header() {
     const classes = useStyles();
 
+    const handleClick = ()=> {
+        const scrollDiv = document.getElementById("contact").offsetTop;
+        window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
+    }
+    const handleClickHome = ()=> {
+        const scrollDivHome = document.getElementById("home").offsetTop;
+
+        window.scrollTo({ top: scrollDivHome, behavior: 'smooth'});
+    }
+
+    const handleClickProject = ()=> {
+        const scrollDivProject = document.getElementById("projects").offsetTop;
+
+        window.scrollTo({ top: scrollDivProject, behavior: 'smooth'});
+    }
+
+   
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" >
                 <Toolbar>
-                    <Typography variant="h6" className={classes.title} align="center">
-                        <Button component={Link} to='/home' className={classes.button}
-                            size="small"
-                            color="inherit"
-                            startIcon={<HomeOutlinedIcon />}
+                    <Typography variant="h6" color='textSecondary' className={classes.title} align="center">
+                        <Link href="#Home" className={classes.button}
+                        onClick={handleClickHome}
+                            color='inherit'
                         >
                             Home
-                        </Button>
+                        </Link>
                     </Typography>
-
                     <Typography variant="h6" className={classes.title} align="center">
-                        <Button component={Link} to='/projects' className={classes.button}
-                            size="small"
-                            color="inherit"
-                            startIcon={<WorkOutlineOutlinedIcon />}
+                        <Link href="#projects" className={classes.button}
+                            onClick={handleClickProject}
+                            color='inherit'
                         >
                             Projects
-                        </Button>
+                        </Link >
                     </Typography>
                     <Typography variant="h6" className={classes.title} align="center">
-                        <Button component={Link} to='/contact' className={classes.button}
-                            size="small"
-                            color="inherit"
-                            startIcon={<ContactMailOutlinedIcon />}
+                        <Link href="#contact" className={classes.button}
+                            onClick={handleClick}
+                            color='inherit'
                         >
                             Contact
-                        </Button>
+                        </Link >
+
                     </Typography>
+
                 </Toolbar>
             </AppBar>
         </div>
