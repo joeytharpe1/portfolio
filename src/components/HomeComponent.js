@@ -78,7 +78,9 @@ function Home() {
         const scrollDiv = document.getElementById("contact").offsetTop;
         window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
     }
-   
+   const handleLinkedinClick = ()=> {
+    window.open('https://www.linkedin.com/in/joseph-tharpe')
+   }
 
     return (
         <Container>
@@ -130,7 +132,7 @@ function Home() {
                                     </Typography>
                                     <br />
                                     <Typography variant="body1" color='textPrimary' className={classes.body1}>
-                                        My <span className={classes.span2}>LinkedIn</span> profile for more details or just <span className={classes.span2} onClick={handleClick}> Contact Me</span>
+                                        My <span className={classes.span2} onClick={handleLinkedinClick}>LinkedIn</span> profile for more details or just <span className={classes.span2} onClick={handleClick}> Contact Me</span>
                                     </Typography>
                                 </CardContent>
                             </Paper>
