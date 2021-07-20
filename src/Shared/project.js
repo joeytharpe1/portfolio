@@ -22,7 +22,7 @@ export const PROJECTS = [
         name: "Nike Clone Landing Page",
         image: "images/nikeClone.png",
         description: "Nike clone..Still working on it",
-        url: '',
+        url: 'https://jtharpe-nike.netlify.app',
         button: 'You can do it'
     },
     {
