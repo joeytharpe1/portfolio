@@ -19,10 +19,10 @@ const theme = createMuiTheme({
             main: '#000000',
         },
         secondary: {
-            main: '#34eba8',
+            main: '#BCA88E',
         },
         warning: {
-            main: '#ffdd00',
+            main: '#fff',
         },
         type: 'dark'
     },
@@ -30,11 +30,28 @@ const theme = createMuiTheme({
         fontFamily: 'Garamond',
     },
     spacing: 2,
+    overrides: {
+        MuiInputLabel: {
+            root: {
+                color: "black",
+                // border: "1px solid red"
+            },
+        },
+        MuiOutlinedInput: {
+            root: {
+               
+                backgroundColor: "#BCA88E",
+                opacity: 0.5,
+            }
+        },
+        
+    },
+  
 
 })
 
 function Main() {
- 
+
 
 
     return (
@@ -53,7 +70,7 @@ function Main() {
                     <Header />
                     <Switch>
                         <Route path='/home' component={Home} />
-                        <Route exact path='/home#projects' component={Projects}/>
+                        <Route exact path='/home#projects' component={Projects} />
                         <Route exact path='/home#contact' component={Contact} />
                         <Redirect to='/home' />
                     </Switch>

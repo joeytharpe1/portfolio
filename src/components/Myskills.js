@@ -13,8 +13,8 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
 	card: {
 		marginBottom: 5,
-		border: '1px solid #34eba8',
-		backgroundColor: theme.palette.primary.main,
+		border: '1px solid #BCA88E',
+		backgroundColor: '#fff',
 		transition: "transform 0.15s ease-in-out",
 		"&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
 	},
@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		}
 	},
 	header: {
+		color: theme.palette.primary.main,
 		transition: "transform 0.15s ease-in-out",
 		'&:hover': {
 			transform: "scale3d(1.05, 1.05, 1)",
@@ -51,37 +52,37 @@ function Myskills() {
 			<CardContent>
 				<CardActions>
 					<Fade bottom>
-						<Button color="primary" variant='contained' size='small' className={classes.textani} >
+						<Button color="#fff"  size='small' className={classes.textani} >
 							<TextLoop>
-								<span style={{ color: '#34eba8' }}>Bootstrap</span>
-								<span style={{ color: 'white' }}>Bootstrap</span>
+								<span style={{ color: '#BCA88E' }}>Bootstrap</span>
+								<span style={{ color: 'black' }}>Bootstrap</span>
 								<span style={{ color: 'grey' }}>Bootstrap</span>
 							</TextLoop>
 						</Button>
 					</Fade>
 					<Fade top>
-						<Button color="primary" variant='contained' size='small' className={classes.textani} >
+						<Button color="#fff"  size='small' className={classes.textani} >
 							<TextLoop>
 								<span style={{ color: 'grey' }}>Material UI</span>
-								<span style={{ color: '#34eba8' }}>Material UI</span>
-								<span style={{ color: 'white' }}>Material UI</span>
+								<span style={{ color: '#BCA88E' }}>Material UI</span>
+								<span style={{ color: 'black' }}>Material UI</span>
 							</TextLoop>
 						</Button>
 					</Fade>
 					<Fade left>
-						<Button color="primary" variant='contained' size='small' className={classes.textani} >
+						<Button color="#fff"  size='small' className={classes.textani} >
 							<TextLoop>
-								<span style={{ color: 'white' }}>CSS</span>
+								<span style={{ color: 'black' }}>CSS</span>
 								<span style={{ color: 'grey' }}>CSS</span>
-								<span style={{ color: '#34eba8' }}>CSS</span>
+								<span style={{ color: '#BCA88E' }}>CSS</span>
 							</TextLoop>
 						</Button>
 					</Fade>
 					<Fade right>
-						<Button color="primary" variant='contained' size='small' className={classes.textani}>
+						<Button color="#fff"  size='small' className={classes.textani}>
 							<TextLoop>
-								<span style={{ color: '#34eba8' }}>HTML</span>
-								<span style={{ color: 'white' }}>HTML</span>
+								<span style={{ color: '#BCA88E' }}>HTML</span>
+								<span style={{ color: 'black' }}>HTML</span>
 								<span style={{ color: 'grey' }}>HTML</span>
 							</TextLoop>
 						</Button>
@@ -89,38 +90,38 @@ function Myskills() {
 				</CardActions>
 				<CardActions>
 					<Fade top>
-						<Button color="primary" variant='contained' size='small' className={classes.textani} >
+						<Button color="#fff"  size='small' className={classes.textani} >
 							<TextLoop>
 								<span style={{ color: 'grey' }}>React JS</span>
-								<span style={{ color: '#34eba8' }}>React JS</span>
-								<span style={{ color: 'white' }}>React JS</span>
+								<span style={{ color: '#BCA88E' }}>React JS</span>
+								<span style={{ color: 'black' }}>React JS</span>
 							</TextLoop>
 						</Button>
 					</Fade>
 					<Fade bottom>
-						<Button color="primary" variant='contained' size='small' className={classes.textani} >
+						<Button color="#fff"  size='small' className={classes.textani} >
 							<TextLoop>
-								<span style={{ color: 'white' }}>Node JS</span>
+								<span style={{ color: 'black' }}>Node JS</span>
 								<span style={{ color: 'grey' }}>Node JS</span>
-								<span style={{ color: '#34eba8' }}>Node JS</span>
+								<span style={{ color: '#BCA88E' }}>Node JS</span>
 							</TextLoop>
 						</Button>
 					</Fade>
 					<Fade right>
-						<Button color="primary" variant='contained' size='small' className={classes.textani} >
+						<Button color="#fff"  size='small' className={classes.textani} >
 							<TextLoop>
-								<span style={{ color: '#34eba8' }}>Mongo DB</span>
-								<span style={{ color: 'white' }}>Mongo DB</span>
+								<span style={{ color: '#BCA88E' }}>Mongo DB</span>
+								<span style={{ color: 'black' }}>Mongo DB</span>
 								<span style={{ color: 'grey' }}>Mongo DB</span>
 							</TextLoop>
 						</Button>
 					</Fade>
 					<Fade left>
-						<Button color="primary" variant='contained' size='small' className={classes.textani}>
+						<Button color="#fff"  size='small' className={classes.textani}>
 							<TextLoop>
 								<span style={{ color: 'grey' }}>JSON</span>
-								<span style={{ color: '#34eba8' }}>JSON</span>
-								<span style={{ color: 'white' }}>JSON</span>
+								<span style={{ color: '#BCA88E' }}>JSON</span>
+								<span style={{ color: 'black' }}>JSON</span>
 							</TextLoop>
 						</Button>
 					</Fade>

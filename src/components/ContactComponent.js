@@ -16,8 +16,10 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 20,
     },
     button: {
+        color: theme.palette.primary.main,
+        backgroundColor: '#fff',
         '&:hover': {
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: '#fff',
             color: theme.palette.secondary.main,
             transition: "transform 0.15s ease-in-out",
             "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
@@ -25,10 +27,9 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         marginTop: 2,
-        border: '1px solid #34eba8',
-        color: theme.palette.secondary.main,
-        '& p': 'white',
-        backgroundColor: '#000000',
+        border: '1px solid #BCA88E',
+        color: theme.palette.primary.main,
+        backgroundColor: '#fff',
         alignItems: 'center',
         transition: "transform 0.15s ease-in-out",
         "&:hover": { transform: "scale3d(1.01, 1.01, 1)" },
@@ -42,12 +43,18 @@ const useStyles = makeStyles((theme) => ({
             cursor: 'pointer',
         }
     },
+    label: {
+        border: '1px solid #BCA88E',
+        borderColor: theme.palette.primary.main
+    }
 }));
+
 
 
 function Contact() {
     const classes = useStyles();
 
+   
 
     return (
         <Container className={classes.root}>
@@ -58,8 +65,8 @@ function Contact() {
             </Grid>
             <Card className={classes.card} elevation={15}>
                 <CardContent>
-                    <Typography gutterBottom variant="h6" color='secondary'>Like what you see ?</Typography>
-                    <Typography gutterBottom variant="body2" component='p' color='textSecondary'>
+                    <Typography gutterBottom variant="h6" color='Primary'>contact me</Typography>
+                    <Typography gutterBottom variant="body2" component='p' color='primary'>
                         fill out this form and i will get back to you within 24 hours.
                     </Typography>
                     <form >
@@ -103,7 +110,7 @@ function Contact() {
                                 />
                             </Grid>
                             <Grid item xs={12} >
-                                <Button type='submit' variant='contained' fullWidth color='primary' onSubmit={SendEmail} className={classes.button}>
+                                <Button type='submit'  fullWidth color='#fff' onSubmit={SendEmail} className={classes.button}>
                                     Submit
                                 </Button>
                             </Grid>

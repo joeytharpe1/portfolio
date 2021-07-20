@@ -43,11 +43,11 @@ export const PROJECTS = [
     },
 
 
-    {
-        id: 6,
-        name: "project 4",
-        image: "images/starwars.jpg",
-        description: "project 4 description",
-        url: ''
-    }
+    // {
+    //     id: 6,
+    //     name: "project 4",
+    //     image: "images/starwars.jpg",
+    //     description: "project 4 description",
+    //     url: ''
+    // }
 ];

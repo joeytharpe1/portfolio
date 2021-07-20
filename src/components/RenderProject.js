@@ -22,17 +22,18 @@ const useStyles = makeStyles((theme) => ({
         backgroundPosition: 'top'
     },
     card: {
-        border: '1px solid #34eba8',
+        border: '1px solid #BCA88E',
         color: '#fff',
-        backgroundColor: '#000000',
+        backgroundColor: '#fff',
         transition: "transform 0.5s ease-in-out",
         "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
         cursor: 'pointer',
     },
     button: {
+        color: theme.palette.primary.main,
         '&:hover': {
             fontstyle: 'italic',
-            backgroundColor: theme.palette.primary.main,
+            // backgroundColor: theme.palette.primary.main,
             color: theme.palette.secondary.main,
             transition: "transform 0.5s ease-in-out",
             "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
     body1: {
         '&:hover': {
-            backgroundColor: theme.palette.primary.main,
+            // backgroundColor: theme.palette.primary.main,
             color: theme.palette.secondary.main,
         }
     },
@@ -58,7 +59,7 @@ function RenderProject() {
                         <Fade top>
                             <Card className={classes.card} elevation={15}>
                                 <CardContent>
-                                    <Typography variant='h6' className={classes.body1}>{project.name}</Typography>
+                                    <Typography variant='h6' color='primary' className={classes.body1}>{project.name}</Typography>
                                 </CardContent>
                                 <CardMedia
                                     className={classes.media}
@@ -66,7 +67,7 @@ function RenderProject() {
                                     title={project.name}
                                 />
                                 <CardContent>
-                                    <Typography variant='body1' color='textPrimary' className={classes.body1}>
+                                    <Typography variant='body1' color='primary' className={classes.body1}>
                                         {project.description}
                                     </Typography>
                                 </CardContent>

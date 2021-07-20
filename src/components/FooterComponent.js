@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
     button: {
         color: '#fff',
         '&:hover': {
-            backgroundColor: theme.palette.primary.main,
-            color: theme.palette.secondary.main,
+            // backgroundColor: theme.palette.primary.main,
+            color: theme.palette.primary.main,
             transition: "transform 0.15s ease-in-out",
             "&:hover": {
                 transform: "scale3d(1.05, 1.05, 1)",
@@ -54,7 +54,7 @@ function Footer() {
    
     return (
         <div>
-            <AppBar position="static" >
+            <AppBar position="static" color='secondary'>
                 <Toolbar>
                     <Typography variant="h6" color='textSecondary' className={classes.title} align="center">
                         <Link href="#Home" className={classes.button}
