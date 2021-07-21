@@ -11,7 +11,9 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
-        marginTop: 2,
+        marginTop: 4,
+
+
     },
   
     title: {
@@ -54,9 +56,9 @@ function Footer() {
    
     return (
         <div>
-            <AppBar position="static" color='secondary'>
+            <AppBar position="static" color='secondary' className={classes.appbar}>
                 <Toolbar>
-                    <Typography variant="h6" color='textSecondary' className={classes.title} align="center">
+                    <Typography variant="h6" color='textSecondary' className={classes.title} align="center" gutterBottom>
                         <Link href="#Home" className={classes.button}
                         onClick={handleClickHome}
                             color='inherit'
@@ -64,7 +66,7 @@ function Footer() {
                             Home
                         </Link>
                     </Typography>
-                    <Typography variant="h6" className={classes.title} align="center">
+                    <Typography variant="h6" className={classes.title} align="center" gutterBottom>
                         <Link href="#projects" className={classes.button}
                             onClick={handleClickProject}
                             color='inherit'
@@ -72,7 +74,7 @@ function Footer() {
                             Projects
                         </Link >
                     </Typography>
-                    <Typography variant="h6" className={classes.title} align="center">
+                    <Typography variant="h6" className={classes.title} align="center" gutterBottom>
                         <Link href="#contact" className={classes.button}
                             onClick={handleClick}
                             color='inherit'
