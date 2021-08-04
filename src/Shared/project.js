@@ -9,6 +9,14 @@ export const PROJECTS = [
         button: 'Relax and unwine'
     },
     {
+        id: 8,
+        name: "Recipe finder",
+        image: 'images/recipe.jpg',
+        description: "recipe ingredient finder",
+        url: 'https://jtharpe-foodie.netlify.app',
+        button: 'feeling hungry'
+    },
+    {
         id: 2,
         name: "WackJack Card game",
         image: 'images/wackjack.png',
@@ -25,7 +33,7 @@ export const PROJECTS = [
         button: 'Feel the Force'
     },
     {
-        id: 6,
+        id: 64,
         name: "Nike Clone Landing Page",
         image: "images/nikeClone.png",
         description: "Nike clone..Still working on it",
@@ -57,8 +65,9 @@ export const PROJECTS = [
         button: 'see how it works'
     },
 
+  
     // {
-    //     id: 6,
+    //     id: 9,
     //     name: "To-do Cooking Recipe",
     //     image: 'images/toodo.png',
     //     description: "todo list for storing ingredients 👨‍🍳",
@@ -66,15 +75,7 @@ export const PROJECTS = [
     //     button: 'see how it works'
     // },
     // {
-    //     id: 6,
-    //     name: "To-do Cooking Recipe",
-    //     image: 'images/toodo.png',
-    //     description: "todo list for storing ingredients 👨‍🍳",
-    //     url: 'https://jtharpe-toodo-list.netlify.app',
-    //     button: 'see how it works'
-    // },
-    // {
-    //     id: 6,
+    //     id: 10,
     //     name: "To-do Cooking Recipe",
     //     image: 'images/toodo.png',
     //     description: "todo list for storing ingredients 👨‍🍳",
