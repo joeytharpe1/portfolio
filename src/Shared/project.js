@@ -9,6 +9,14 @@ export const PROJECTS = [
         button: 'Relax and unwine'
     },
     {
+        id: 9,
+        name: "News Letter",
+        image: 'images/newsletter.jpg',
+        description: "News letter built in node and express js",
+        url: 'https://jtharpe-newsletter.herokuapp.com',
+        button: 'sign up'
+    },
+    {
         id: 8,
         name: "Recipe finder",
         image: 'images/recipe.jpg',
@@ -65,9 +73,26 @@ export const PROJECTS = [
         button: 'see how it works'
     },
 
-  
+
+
     // {
-    //     id: 9,
+    //     id: 10,
+    //     name: "To-do Cooking Recipe",
+    //     image: 'images/toodo.png',
+    //     description: "todo list for storing ingredients 👨‍🍳",
+    //     url: 'https://jtharpe-toodo-list.netlify.app',
+    //     button: 'see how it works'
+    // },
+    // {
+    //     id: 10,
+    //     name: "To-do Cooking Recipe",
+    //     image: 'images/toodo.png',
+    //     description: "todo list for storing ingredients 👨‍🍳",
+    //     url: 'https://jtharpe-toodo-list.netlify.app',
+    //     button: 'see how it works'
+    // },
+    // {
+    //     id: 10,
     //     name: "To-do Cooking Recipe",
     //     image: 'images/toodo.png',
     //     description: "todo list for storing ingredients 👨‍🍳",
