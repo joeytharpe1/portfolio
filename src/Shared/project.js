@@ -1,12 +1,12 @@
 
 export const PROJECTS = [
     {
-        id: 1,
-        name: "Winery",
-        image: "images/wineproject.png",
-        description: "Wine website built with bootstrap and html5",
-        url: 'https://jtharpe-winery.netlify.app',
-        button: 'Relax and unwine'
+        id: 5,
+        name: "Weather App",
+        image: "images/weather.png",
+        description: "Dynamic weather app 🌴",
+        url: 'https://jtharpe-weather-app.netlify.app',
+        button: 'experience the weather in action'
     },
     {
         id: 9,
@@ -44,17 +44,9 @@ export const PROJECTS = [
         id: 64,
         name: "Nike Clone Landing Page",
         image: "images/nikeClone.png",
-        description: "Nike clone..Still working on it",
+        description: "Nike clone. Made with React",
         url: 'https://jtharpe-nike.netlify.app',
         button: 'You can do it'
-    },
-    {
-        id: 5,
-        name: "Weather App",
-        image: "images/weather.png",
-        description: "Dynamic weather app 🌴",
-        url: 'https://jtharpe-weather-app.netlify.app',
-        button: 'experience the weather in action'
     },
     {
         id: 6,
@@ -63,6 +55,14 @@ export const PROJECTS = [
         description: "starbucks coffee clone ☕",
         url: 'https://jtharpe-coffee-clone.netlify.app',
         button: 'hmm craving coffee ?'
+    },
+    {
+        id: 1,
+        name: "Winery",
+        image: "images/wineproject.png",
+        description: "Wine website built with bootstrap and html5",
+        url: 'https://jtharpe-winery.netlify.app',
+        button: 'Relax and unwine'
     },
     {
         id: 7,
