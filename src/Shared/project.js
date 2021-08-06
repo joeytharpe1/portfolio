@@ -17,6 +17,14 @@ export const PROJECTS = [
         button: 'sign up'
     },
     {
+        id: 10,
+        name: "Todo List",
+        image: 'images/todoList.jpg',
+        description: "todo list made with node, ejs and express js",
+        url: 'https://jtharpe-todolist.herokuapp.com/',
+        button: 'check it out'
+    },
+    {
         id: 8,
         name: "Recipe finder",
         image: 'images/recipe.jpg',
@@ -72,11 +80,8 @@ export const PROJECTS = [
         url: 'https://jtharpe-toodo-list.netlify.app',
         button: 'see how it works'
     },
-
-
-
     // {
-    //     id: 10,
+    //     id: 11,
     //     name: "To-do Cooking Recipe",
     //     image: 'images/toodo.png',
     //     description: "todo list for storing ingredients 👨‍🍳",
@@ -84,7 +89,7 @@ export const PROJECTS = [
     //     button: 'see how it works'
     // },
     // {
-    //     id: 10,
+    //     id: 12,
     //     name: "To-do Cooking Recipe",
     //     image: 'images/toodo.png',
     //     description: "todo list for storing ingredients 👨‍🍳",
@@ -92,15 +97,7 @@ export const PROJECTS = [
     //     button: 'see how it works'
     // },
     // {
-    //     id: 10,
-    //     name: "To-do Cooking Recipe",
-    //     image: 'images/toodo.png',
-    //     description: "todo list for storing ingredients 👨‍🍳",
-    //     url: 'https://jtharpe-toodo-list.netlify.app',
-    //     button: 'see how it works'
-    // },
-    // {
-    //     id: 10,
+    //     id: 13,
     //     name: "To-do Cooking Recipe",
     //     image: 'images/toodo.png',
     //     description: "todo list for storing ingredients 👨‍🍳",
