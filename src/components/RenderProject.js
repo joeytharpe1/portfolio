@@ -55,7 +55,7 @@ function RenderProject() {
         <Container className={classes.root} >
             <Grid container align='center' justify='center' spacing={4}>
                 {PROJECTS.map((project) => (
-                    <Grid item key={project.id} xs={12} sm={4}>
+                    <Grid item key={project.id} xs={12} sm={3}>
                         <Fade top>
                             <Card className={classes.card} elevation={15}>
                                 <CardContent>

@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     },
     header: {
         marginTop: 20,
+        color: theme.palette.warning.main,
         '&:hover': {
             transform: "scale3d(1.05, 1.05, 1)",
             color: theme.palette.secondary.main,

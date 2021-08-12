@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
         cursor: 'pointer',
     },
     header: {
+        color: theme.palette.warning.main,
         marginTop: 20,
         '&:hover': {
             transform: "scale3d(1.05, 1.05, 1)",

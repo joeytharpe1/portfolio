@@ -20,7 +20,7 @@ export const PROJECTS = [
         id: 10,
         name: "Todo List",
         image: 'images/todoList.jpg',
-        description: "todo list made with node, ejs and express js",
+        description: "todo list made with node and express js",
         url: 'https://jtharpe-todolist.herokuapp.com/',
         button: 'check it out'
     },

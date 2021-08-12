@@ -11,11 +11,11 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
-        marginBottom: 15,
     },
     root: {
         flexGrow: 1,
         display: 'flex',
+        marginBottom: 35,
     },
     title: {
         flexGrow: 1,
@@ -57,7 +57,7 @@ function Header() {
    
     return (
         <div className={classes.root}>
-            <AppBar position="static" color="secondary" >
+            <AppBar position="fixed" color="secondary" >
                 <Toolbar>
                     <Typography variant="h6" color='textSecondary' className={classes.title} align="center">
                         <Link href="#Home" className={classes.button}
