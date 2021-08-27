@@ -49,12 +49,28 @@ export const PROJECTS = [
         button: 'Feel the Force'
     },
     {
+        id: 12,
+        name: "e-commerce site",
+        image: 'images/ecommerce.jpg',
+        description: "fake e-commerce",
+        url: 'https://jtharpe-ecommerce.netlify.app/',
+        button: 'shop now'
+    },
+    {
         id: 64,
         name: "Nike Clone Landing Page",
         image: "images/nikeClone.png",
         description: "Nike clone. Made with React",
         url: 'https://jtharpe-nike.netlify.app',
         button: 'You can do it'
+    },
+    {
+        id: 11,
+        name: "Meme Generator",
+        image: 'images/memeG.jpg',
+        description: "Random meme generator",
+        url: 'https://jtharpe-meme.netlify.app/',
+        button: 'Get memes'
     },
     {
         id: 6,
@@ -80,24 +96,26 @@ export const PROJECTS = [
         url: 'https://jtharpe-toodo-list.netlify.app',
         button: 'see how it works'
     },
-    // {
-    //     id: 11,
-    //     name: "To-do Cooking Recipe",
-    //     image: 'images/toodo.png',
-    //     description: "todo list for storing ingredients 👨‍🍳",
-    //     url: 'https://jtharpe-toodo-list.netlify.app',
-    //     button: 'see how it works'
-    // },
-    // {
-    //     id: 12,
-    //     name: "To-do Cooking Recipe",
-    //     image: 'images/toodo.png',
-    //     description: "todo list for storing ingredients 👨‍🍳",
-    //     url: 'https://jtharpe-toodo-list.netlify.app',
-    //     button: 'see how it works'
-    // },
+    
+    
     // {
     //     id: 13,
+    //     name: "To-do Cooking Recipe",
+    //     image: 'images/toodo.png',
+    //     description: "todo list for storing ingredients 👨‍🍳",
+    //     url: 'https://jtharpe-toodo-list.netlify.app',
+    //     button: 'see how it works'
+    // },
+    // {
+    //     id: 14,
+    //     name: "To-do Cooking Recipe",
+    //     image: 'images/toodo.png',
+    //     description: "todo list for storing ingredients 👨‍🍳",
+    //     url: 'https://jtharpe-toodo-list.netlify.app',
+    //     button: 'see how it works'
+    // },
+    // {
+    //     id: 15,
     //     name: "To-do Cooking Recipe",
     //     image: 'images/toodo.png',
     //     description: "todo list for storing ingredients 👨‍🍳",
