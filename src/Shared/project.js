@@ -6,7 +6,15 @@ export const PROJECTS = [
         image: "images/weather.png",
         description: "Dynamic weather app 🌴",
         url: 'https://jtharpe-weather-app.netlify.app',
-        button: 'experience the weather in action'
+        button: 'experience the action'
+    },
+    {
+        id: 13,
+        name: "Joke Generator",
+        image: 'images/jokes.jpg',
+        description: "random joke generator",
+        url: 'https://jtharpe-jokes.netlify.app',
+        button: 'view jokes'
     },
     {
         id: 9,
@@ -57,7 +65,7 @@ export const PROJECTS = [
         button: 'shop now'
     },
     {
-        id: 64,
+        id: 18,
         name: "Nike Clone Landing Page",
         image: "images/nikeClone.png",
         description: "Nike clone. Made with React",
@@ -97,15 +105,6 @@ export const PROJECTS = [
         button: 'see how it works'
     },
     
-    
-    // {
-    //     id: 13,
-    //     name: "To-do Cooking Recipe",
-    //     image: 'images/toodo.png',
-    //     description: "todo list for storing ingredients 👨‍🍳",
-    //     url: 'https://jtharpe-toodo-list.netlify.app',
-    //     button: 'see how it works'
-    // },
     // {
     //     id: 14,
     //     name: "To-do Cooking Recipe",
@@ -116,6 +115,30 @@ export const PROJECTS = [
     // },
     // {
     //     id: 15,
+    //     name: "To-do Cooking Recipe",
+    //     image: 'images/toodo.png',
+    //     description: "todo list for storing ingredients 👨‍🍳",
+    //     url: 'https://jtharpe-toodo-list.netlify.app',
+    //     button: 'see how it works'
+    // },
+    // {
+    //     id: 16,
+    //     name: "To-do Cooking Recipe",
+    //     image: 'images/toodo.png',
+    //     description: "todo list for storing ingredients 👨‍🍳",
+    //     url: 'https://jtharpe-toodo-list.netlify.app',
+    //     button: 'see how it works'
+    // },
+    // {
+    //     id: 17,
+    //     name: "To-do Cooking Recipe",
+    //     image: 'images/toodo.png',
+    //     description: "todo list for storing ingredients 👨‍🍳",
+    //     url: 'https://jtharpe-toodo-list.netlify.app',
+    //     button: 'see how it works'
+    // },
+    // {
+    //     id: 19,
     //     name: "To-do Cooking Recipe",
     //     image: 'images/toodo.png',
     //     description: "todo list for storing ingredients 👨‍🍳",
